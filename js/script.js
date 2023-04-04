@@ -17,64 +17,42 @@ buttons.forEach(button => {
   })
 })
 
+function showMobileNav() {
+  var mobileNav = document.getElementById("nav-mobile");
 
-
-
-
-
-
-
-
-
-
-
-
-function changeBackground(){
-    var header = document.getElementById("header");
-    header.classList.toggle("switch-color");
-    changeOpacityMenu();
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function changeOpacityMenu(){
-    var checkBox = document.getElementById("side-menu");
-    if (checkBox.checked == true){
-        changeOpacity0();
-    } else {
-        changeOpacity1();
+  if (mobileNav.style.display === "none") {
+    mobileNav.style.display = "flex";
+  }
+  else {
+    mobileNav.style.display = "none";
   }
 }
 
-function changeOpacity0(){
-    var element1 = document.getElementById("section");
-    document.getElementById("section").style.display = "none";
+function changeBackground() {
+  var header = document.getElementById("header");
+  header.classList.toggle("switch-color");
+  changeOpacityMenu();
 }
 
-function changeOpacity1(){
-    var element1 = document.getElementById("section");
-    document.getElementById("section").style.display = "";
+function changeOpacityMenu() {
+  var checkBox = document.getElementById("side-menu");
+  if (checkBox.checked == true) {
+    changeOpacity0();
+  } else {
+    changeOpacity1();
+  }
 }
-function loadMenu(){
+
+function changeOpacity0() {
+  var element1 = document.getElementById("section");
+  document.getElementById("section").style.display = "none";
+}
+
+function changeOpacity1() {
+  var element1 = document.getElementById("section");
+  document.getElementById("section").style.display = "";
+}
+function loadMenu() {
   document.getElementById("navMenu").style.display = "none";
   document.getElementById("sectionIndex").style.display = "";
 }
