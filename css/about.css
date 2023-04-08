@@ -1,3 +1,4 @@
+/* About content */
 #about {
     display: flex;
     justify-content: center;
@@ -44,5 +45,4 @@
     #about p {
         width: 100%;
     }
-
 }

@@ -1,3 +1,4 @@
+/* Projects grid (desktop) */
 .grid-container-desktop {
     display: grid;
     grid-template-columns: auto;
@@ -12,7 +13,6 @@
 .grid-container-mobile {
     display: none;
 }
-
 
 .grid-item {
     /* float: left; */
@@ -114,6 +114,7 @@
         display: none;
     }
 
+    /* Projects grid (mobile) */
     .grid-container-mobile {
         display: grid;
         grid-template-columns: auto;

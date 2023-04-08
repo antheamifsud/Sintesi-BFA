@@ -1,3 +1,4 @@
+/* Landing logo */
 #landing {
     display: flex;
     flex-direction: column;
@@ -17,6 +18,7 @@
     max-width: 50%;
 }
 
+/* EXPERIENCE THE PROJECTS */
 #experience {
     display: flex;
     flex-direction: column;
