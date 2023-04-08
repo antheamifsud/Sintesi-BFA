@@ -6,30 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/projects.css" />
 
   <script src="./js/script.js" defer></script>
 
+  <!-- Icon -->
+  <link rel="icon" href="images/icon.png" />
+
+  <!-- Page title -->
   <title>PROJECTS</title>
 </head>
 
 <body>
   <header class="header" id="header">
 
-    <!-- TOP-LEFT LOGO -->
+    <!-- Logo -->
     <a href="./index.html">
       <img src="./images/icon.png" id="logo" alt="logo" />
     </a>
 
-    <!-- HAMBURGER -->
+    <!-- Mobile Hamburger -->
     <input class="side-menu" type="checkbox" id="side-menu" onclick="showMobileNav()" />
     <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
 
-    <!-- MOBILE NAV -->
+    <!-- Mobile Navbar -->
     <nav style="display: none" id="nav-mobile">
       <ul>
-        <li><a href="./index.html">HOME</a></li>
+        <!-- <li><a href="./index.html">HOME</a></li> -->
         <li><a href="./about.html">ABOUT US</a></li>
         <li><a href="./projects.html">PROJECTS</a></li>
         <li><a href="./sponsors.html">SPONSORS</a></li>
@@ -38,9 +43,9 @@
       </ul>
     </nav>
 
-    <!-- DESKTOP NAV -->
+    <!-- Desktop Navbar -->
     <ul id="nav-desktop">
-      <li><a href="./index.html">HOME</a></li>
+      <!-- <li><a href="./index.html">HOME</a></li> -->
       <li><a href="./about.html">ABOUT US</a></li>
       <li class="current"><a href="./projects.html">PROJECTS</a></li>
       <li><a href="./sponsors.html">SPONSORS</a></li>
@@ -50,53 +55,127 @@
 
   </header>
 
+  <!-- Projects grid (desktop) - two projects per row -->
   <div class="grid-container-desktop">
-    <div class="row">
-      <div class="grid-item">
-        <img src="./images/1.jpg">
+    <div class="row"> <!-- Grid row -->
+
+      <div class="grid-item"> <!-- Row item -->
+        <div class="grid-item-image"> <!-- Project author name + image section -->
+          <span class="grid-item-author"><p>JOHN DOE</p></span> <!-- Author name -->
+          <img src="./images/1.jpg"> <!-- Image -->
+        </div>
+        <span class="grid-item-type"><p>PHOTOGRAPHY</p></span>  <!-- Project type -->
+        <span class="grid-item-title"><p>PROJECT TITLE</p></span> <!-- Project title -->
       </div>
+
       <div class="grid-item">
-        <img src="./images/2.jpg">
+        <div class="grid-item-image">
+          <span class="grid-item-author"><p>JOHN DOE</p></span>
+          <img src="./images/2.jpg">
+        </div>
+        <span class="grid-item-type"><p>PHOTOGRAPHY</p></span>
+        <span class="grid-item-title"><p>PROJECT TITLE</p></span>
       </div>
     </div>
 
-    <div class="row">
-      <div class="grid-item">
-        <img src="./images/3.jpg">
-      </div>
-      <div class="grid-item">
-        <img src="./images/4.jpg">
-      </div>
-    </div>
 
     <div class="row">
       <div class="grid-item">
-        <img src="./images/5.jpg">
+        <div class="grid-item-image">
+          <span class="grid-item-author"><p>JOHN DOE</p></span>
+          <img src="./images/3.jpg">
+        </div>
+        <span class="grid-item-type"><p>PHOTOGRAPHY</p></span>
+        <span class="grid-item-title"><p>PROJECT TITLE</p></span>
       </div>
+
       <div class="grid-item">
-        <img src="./images/6.jpg">
+        <div class="grid-item-image">
+          <span class="grid-item-author"><p>JOHN DOE</p></span>
+          <img src="./images/4.jpg">
+        </div>
+        <span class="grid-item-type"><p>PHOTOGRAPHY</p></span>
+        <span class="grid-item-title"><p>PROJECT TITLE</p></span>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="grid-item">
+        <div class="grid-item-image">
+          <span class="grid-item-author"><p>JOHN DOE</p></span>
+          <img src="./images/5.jpg">
+        </div>
+        <span class="grid-item-type"><p>PHOTOGRAPHY</p></span>
+        <span class="grid-item-title"><p>PROJECT TITLE</p></span>
+      </div>
+
+      <div class="grid-item">
+        <div class="grid-item-image">
+          <span class="grid-item-author"><p>JOHN DOE</p></span>
+          <img src="./images/6.jpg">
+        </div>
+        <span class="grid-item-type"><p>PHOTOGRAPHY</p></span>
+        <span class="grid-item-title"><p>PROJECT TITLE</p></span>
       </div>
     </div>
   </div>
 
+
+  <!-- Projects grid (mobile) - no rows here as projects take up the entire width -->
   <div class="grid-container-mobile">
-    <div class="row">
-      <div class="grid-item">
+    <div class="grid-item">
+      <div class="grid-item-image">
+        <span class="grid-item-author"><p>JOHN DOE</p></span>
         <img src="./images/1.jpg">
       </div>
+      <span class="grid-item-type"><p>PHOTOGRAPHY</p></span>
+      <span class="grid-item-title"><p>PROJECT TITLE</p></span>
     </div>
 
-    <div class="row">
-      <div class="grid-item">
+    <div class="grid-item">
+      <div class="grid-item-image">
+        <span class="grid-item-author"><p>JOHN DOE</p></span>
         <img src="./images/2.jpg">
       </div>
+      <span class="grid-item-type"><p>PHOTOGRAPHY</p></span>
+      <span class="grid-item-title"><p>PROJECT TITLE</p></span>
     </div>
 
-    <div class="row">
-      <div class="grid-item">
+    <div class="grid-item">
+      <div class="grid-item-image">
+        <span class="grid-item-author"><p>JOHN DOE</p></span>
         <img src="./images/3.jpg">
       </div>
+      <span class="grid-item-type"><p>PHOTOGRAPHY</p></span>
+      <span class="grid-item-title"><p>PROJECT TITLE</p></span>
+    </div>
 
+    <div class="grid-item">
+      <div class="grid-item-image">
+        <span class="grid-item-author"><p>JOHN DOE</p></span>
+        <img src="./images/4.jpg">
+      </div>
+      <span class="grid-item-type"><p>PHOTOGRAPHY</p></span>
+      <span class="grid-item-title"><p>PROJECT TITLE</p></span>
+    </div>
+    
+    <div class="grid-item">
+      <div class="grid-item-image">
+        <span class="grid-item-author"><p>JOHN DOE</p></span>
+        <img src="./images/5.jpg">
+      </div>
+      <span class="grid-item-type"><p>PHOTOGRAPHY</p></span>
+      <span class="grid-item-title"><p>PROJECT TITLE</p></span>
+    </div>
+
+    <div class="grid-item">
+      <div class="grid-item-image">
+        <span class="grid-item-author"><p>JOHN DOE</p></span>
+        <img src="./images/6.jpg">
+      </div>
+      <span class="grid-item-type"><p>PHOTOGRAPHY</p></span>
+      <span class="grid-item-title"><p>PROJECT TITLE</p></span>
     </div>
   </div>
   </div>

@@ -6,31 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/sponsors.css" />
 
   <script src="./js/script.js" defer></script>
+
+  <!-- Icon -->
   <link rel="icon" href="images/icon.png" />
 
+  <!-- Page title -->
   <title>SPONSORS</title>
 </head>
 
 <body>
   <header class="header" id="header">
 
-    <!-- TOP-LEFT LOGO -->
+    <!-- Logo -->
     <a href="./index.html">
       <img src="./images/icon.png" id="logo" alt="logo" />
     </a>
 
-    <!-- HAMBURGER -->
+    <!-- Mobile Hamburger -->
     <input class="side-menu" type="checkbox" id="side-menu" onclick="showMobileNav()" />
     <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
 
-    <!-- MOBILE NAV -->
+    <!-- Mobile Navbar -->
     <nav style="display: none" id="nav-mobile">
       <ul>
-        <li><a href="./index.html">HOME</a></li>
+        <!-- <li><a href="./index.html">HOME</a></li> -->
         <li><a href="./about.html">ABOUT US</a></li>
         <li><a href="./projects.html">PROJECTS</a></li>
         <li><a href="./sponsors.html">SPONSORS</a></li>
@@ -39,9 +43,9 @@
       </ul>
     </nav>
 
-    <!-- DESKTOP NAV -->
+    <!-- Desktop Navbar -->
     <ul id="nav-desktop">
-      <li><a href="./index.html">HOME</a></li>
+      <!-- <li><a href="./index.html">HOME</a></li> -->
       <li><a href="./about.html">ABOUT US</a></li>
       <li><a href="./projects.html">PROJECTS</a></li>
       <li class="current"><a href="./sponsors.html">SPONSORS</a></li>
@@ -52,24 +56,39 @@
   </header>
 
   <body>
-    <!-- <div class="title">
-      <h1 class="sponsors">Sponsors<span class="dot">.</span></h1>
-    </div> -->
-
+    <!-- Sponsors grid (desktop) - three sponsors per row -->
     <div class="grid-container-desktop">
-      <div class="row">
+      <div class="row"> <!-- Grid row -->
+        <div class="grid-item">  <!-- Row item -->
+          <img src="./images/university1c1c1c.png"> <!-- Sponsor image -->
+        </div>
+
         <div class="grid-item">
           <img src="./images/university1c1c1c.png">
         </div>
+
         <div class="grid-item">
           <img src="./images/university1c1c1c.png">
         </div>
+      </div>
+
+      
+      <div class="row"> <!-- Grid row -->
+        <div class="grid-item">  <!-- Row item -->
+          <img src="./images/university1c1c1c.png"> <!-- Sponsor image -->
+        </div>
+
+        <div class="grid-item">
+          <img src="./images/university1c1c1c.png">
+        </div>
+        
         <div class="grid-item">
           <img src="./images/university1c1c1c.png">
         </div>
       </div>
     </div>
 
+    <!-- Sponsors grid (mobile) - two sponsors per row -->
     <div class="grid-container-mobile">
       <div class="row">
         <div class="grid-item">

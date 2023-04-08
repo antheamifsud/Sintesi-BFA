@@ -89,21 +89,25 @@ ul {
   color: white;
 }
 
+.current {
+  color: var(--yellow);
+}
+
 #nav-desktop li {
   padding: 0 1em;
   transition: 0.2s;
 }
 
 #nav-desktop li:hover {
-  color: rgb(228, 228, 228);
+  color: rgb(226, 226, 226)
 }
 
-.current {
+#nav-desktop li.current:hover {
   color: var(--yellow);
 }
 
+
 a,
-a:hover,
 a:focus,
 a:active {
   text-decoration: none;
