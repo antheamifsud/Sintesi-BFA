@@ -38,6 +38,27 @@
     clear: both;
 }
 
+#credits {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1em;
+
+    width: 100%;
+}
+
+#credits a {
+    color: var(--yellow);
+    transition: 0.2s;
+}
+
+
+#credits a:hover {
+    opacity: 0.85;
+}
+
 @media screen and (max-aspect-ratio: 1/1) {
     .grid-container-desktop {
         display: none;
