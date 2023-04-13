@@ -121,7 +121,7 @@
         grid-template-rows: auto;
 
         width: 100%;
-        margin: 0 auto;
+        margin: 0;
     }
 
     .grid-item {
@@ -129,6 +129,8 @@
         width: 100%;
 
         padding: 2em;
+        padding-left: 3em;
+        padding-right: 3em;
         margin: 0;
         text-align: center;
     }

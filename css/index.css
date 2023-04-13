@@ -8,9 +8,11 @@
     padding: 1em;
 
     margin-top: 10vh;
+    margin-bottom: 15vh;
 
     color: var(--white);
     height: 40vh;
+    width: 100%;
 }
 
 #landing img {
@@ -33,6 +35,10 @@
     padding: 1em;
 
     width: 100%;
+}
+
+#experience-mobile {
+    display: none;
 }
 
 #experience p {
@@ -84,7 +90,6 @@
 @media screen and (max-aspect-ratio: 1/1) {
     #landing {
         height: 10vh;
-        margin-bottom: 10vh;
     }
 
     #landing img {
@@ -93,12 +98,24 @@
     }
 
     #experience {
+        display: none;
+    }
+
+    #experience-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+
+        margin: 0;
+        padding: 0;
+        
+        padding-left: 2em;
+    
         font-size: 1.5em;
-        font-weight: 300;
+        font-weight: 400;
         letter-spacing: 1px;
         color: var(--white);
-    
-        padding: 1em;
     
         width: 100%;
     }

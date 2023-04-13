@@ -157,7 +157,7 @@ ul {
 
   #nav-mobile ul li {
     font-size: 3em;
-    font-weight: 600;
+    font-weight: 300;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
   }
@@ -181,7 +181,7 @@ ul {
     display: block;
     height: 2px;
     position: relative;
-    width: 24px;
+    width: 1.5em;
   }
 
   .hamb-line::before,
