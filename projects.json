@@ -1,0 +1,15 @@
+{
+    "projects": [
+        {
+            "id": "antheamifsud",
+            "name": "ANTHEA",
+            "title": "UNLEASHING THE POTENTIAL OF L-ANTIKA<br>ELEVATING THE CARD DECK EXPERIENCE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": 2,
+            "images": "./projects/antheamifsud/images/",
+            "facebook": "#",
+            "instagram": "#"
+        }
+    ]
+}

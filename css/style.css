@@ -15,7 +15,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* Scrollbar */
@@ -52,6 +51,7 @@ ul {
   background-color: var(--bg);
   position: sticky;
   z-index: 10;
+  height: 12vh;
   top: 0;
   width: 100%;
 }
@@ -93,7 +93,8 @@ ul {
 
   letter-spacing: 1px;
 
-  padding: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 
   color: white;
 }
@@ -126,6 +127,62 @@ ul {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+#footer a {
+  text-decoration: none;
+  color: var(--dim);
+
+  transition: .4s;
+}
+
+#footer a:hover {
+  color: var(--dimselect);
+}
+
+#social {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin-left: 3em;
+  margin-bottom: 3em;
+  width: 100%;
+  background: var(--navy);
+  position: fixed;
+  bottom: 0;
+}
+
+#iconcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sociallink svg:hover {
+  opacity: 0.9;
+}
+
+.sociallink {
+  padding-top: 1em;
+}
+
+.sociallink svg {
+  transition: .4s;
+}
+
+/* svg {
+  width: 1.5em;
+  stroke-width: 1.5px;
+} */
+
+#cv {
+  color: var(--white);
+
+  height: 100%;
+  width: 100%;
 }
 
 /* Portrait screens */
@@ -230,5 +287,35 @@ ul {
   /* Hide desktop navbar on portrait devices */
   .nav-desktop {
     display: none;
+  }
+
+  /* Footer */
+  .sociallink {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+  }
+
+  #social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    margin: 0;
+    padding: 0;
+
+    padding-bottom: 0.8em;
+
+    transform: scale(1.1);
+    width: 100%;
+    background: var(--navy);
+    bottom: 0;
+  }
+
+  #iconcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
 }
