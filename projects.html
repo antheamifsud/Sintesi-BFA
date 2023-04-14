@@ -278,8 +278,8 @@
               debitis recusandae cumque!</p>
           </div>
 
-          <div id="scroll-down" onclick="scrollToContent()">
-            <img src="./images/scroll-down.png">
+          <div id="scroll-down">
+            <img src="./images/scroll-down.png" onclick="scrollToContent()">
           </div>
         </div>
       </div>
@@ -402,12 +402,21 @@
           lightbox.style.display = "flex";
           lightbox_image.src = project.images + (i + 1) + ".jpg";
 
+          // disable close button
+          let closebutton = document.getElementById("closebutton");
+          closebutton.style.opacity = 0;
+          closebutton.style.pointerEvents = "none";
         }
       }
+
 
       // close lightbox on click outside lightbox or press esc
       document.getElementById("lightbox").onclick = function () {
         document.getElementById("lightbox").style.display = "none";
+        // enable close button
+        let closebutton = document.getElementById("closebutton");
+        closebutton.style.opacity = 1;
+        closebutton.style.pointerEvents = "auto";
       }
 
       document.onkeydown = function (evt) {
@@ -416,6 +425,10 @@
           let lightbox = document.getElementById("lightbox");
           lightbox.style.display = "none";
         }
+        // enable close button
+        let closebutton = document.getElementById("closebutton");
+        closebutton.style.opacity = 1;
+        closebutton.style.pointerEvents = "auto";
       };
 
       // set social media icon links
@@ -499,11 +512,11 @@
   // ajax post parameters get
   var urlParams = new URLSearchParams(window.location.search);
   var projectid = urlParams.get('projectid');
-  
+
   if (projectid) {
     showObject(projectid);
   }
-  
+
 
   // loadGrid();
 </script>
