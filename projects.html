@@ -59,13 +59,13 @@
   </header>
 
   <!-- Projects grid (desktop) - two projects per row -->
-  <div class="grid-container-desktop">
+  <div id="grid-container-desktop">
     <div class="row"> <!-- Grid row -->
 
       <div class="grid-item"> <!-- Row item -->
         <div class="grid-item-image"> <!-- Project author name + image section -->
-          <span class="grid-item-author" onclick="showObject('antheamifsud')">
-            <p>JOHN DOE</p>
+          <span class="grid-item-author" onclick="showObject('template1')">
+            <p>TEMPLATE 1</p>
           </span> <!-- Author name -->
           <img src="./images/1.jpg"> <!-- Image -->
         </div>
@@ -79,8 +79,8 @@
 
       <div class="grid-item">
         <div class="grid-item-image">
-          <span class="grid-item-author">
-            <p>JOHN DOE</p>
+          <span class="grid-item-author" onclick="showObject('template2')">
+            <p>TEMPLATE 2</p>
           </span>
           <img src="./images/2.jpg">
         </div>
@@ -97,8 +97,8 @@
     <div class="row">
       <div class="grid-item">
         <div class="grid-item-image">
-          <span class="grid-item-author">
-            <p>JOHN DOE</p>
+          <span class="grid-item-author" onclick="showObject('template2c')">
+            <p>TEMPLATE 2c</p>
           </span>
           <img src="./images/3.jpg">
         </div>
@@ -112,8 +112,8 @@
 
       <div class="grid-item">
         <div class="grid-item-image">
-          <span class="grid-item-author">
-            <p>JOHN DOE</p>
+          <span class="grid-item-author" onclick="showObject('template3')">
+            <p>TEMPLATE 3</p>
           </span>
           <img src="./images/4.jpg">
         </div>
@@ -130,8 +130,8 @@
     <div class="row">
       <div class="grid-item">
         <div class="grid-item-image">
-          <span class="grid-item-author">
-            <p>JOHN DOE</p>
+          <span class="grid-item-author" onclick="showObject('template4')">
+            <p>TEMPLATE 4</p>
           </span>
           <img src="./images/5.jpg">
         </div>
@@ -145,8 +145,8 @@
 
       <div class="grid-item">
         <div class="grid-item-image">
-          <span class="grid-item-author">
-            <p>JOHN DOE</p>
+          <span class="grid-item-author" onclick="showObject('template5')">
+            <p>TEMPLATE 5</p>
           </span>
           <img src="./images/6.jpg">
         </div>
@@ -165,8 +165,8 @@
   <div class="grid-container-mobile">
     <div class="grid-item">
       <div class="grid-item-image">
-        <span class="grid-item-author">
-          <p>JOHN DOE</p>
+        <span class="grid-item-author" onclick="showObject('template6')">
+          <p>TEMPLATE 6</p>
         </span>
         <img src="./images/1.jpg">
       </div>
@@ -256,9 +256,8 @@
 
   <div id="fullscreenviewer">
     <div id="closebutton" onclick="fadeOutFullscreen()">
-      <img src="./images/close.png">
+      <img src="./images/scroll-down.png">
     </div>
-
 
     <div id="projectfullscreen">
       <div id="fullscreen-landing">
@@ -270,12 +269,10 @@
         </div>
         <div id="main-info">
           <div id="project-title">
-            <p>UNLEASHING THE POTENTIAL OF L-ANTIKA<br>ELEVATING THE CARD DECK EXPERIENCE</p>
+
           </div>
           <div id="project-description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo
-              quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi
-              debitis recusandae cumque!</p>
+
           </div>
 
           <div id="scroll-down">
@@ -305,60 +302,287 @@
       </div>
 
       <div id="content">
-        <div id="template2">
-          <div class="grid-container-desktop">
-            <div class="row">
-              <div class="grid-item">
-                <div class="grid-item-image">
-                  <img src="./images/yellowportait.png">
-                </div>
-              </div>
-              <div class="grid-item">
-                <div class="grid-item-image">
-                  <img src="./images/yellowportait.png">
-                </div>
-              </div>
-              <div class="grid-item">
-                <div class="grid-item-image">
-                  <img src="./images/yellowportait.png">
-                </div>
-              </div>
-              <div class="grid-item">
-                <div class="grid-item-image">
-                  <img src="./images/yellowportait.png">
-                </div>
+        <div id="template1" class="template">
+          <div class="container">
+            <div class="a1">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
               </div>
             </div>
-            <div class="row">
-              <div class="grid-item">
-                <div class="grid-item-image">
-                  <img src="./images/yellowportait.png">
-                </div>
+            <div class="a2">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
               </div>
-              <div class="grid-item">
-                <div class="grid-item-image">
-                  <img src="./images/yellowportait.png">
-                </div>
+            </div>
+            <div class="a3">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
               </div>
-              <div class="grid-item">
-                <div class="grid-item-image">
-                  <img src="./images/yellowportait.png">
-                </div>
-              </div>
-              <div class="grid-item">
-                <div class="grid-item-image">
-                  <img src="./images/yellowportait.png">
-                </div>
+            </div>
+            <div class="a4">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
               </div>
             </div>
           </div>
 
-          <div id="lightbox">
-            <img id="lightbox-image" src="./images/yellowportait.png">
+          <div class="container">
+            <div class="a1">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a2">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a3">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a4">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="template2" class="template">
+          <div class="container">
+            <div class="a1">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a2">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a3">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a4">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a5">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a6">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a7">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a8">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="template2c" class="template">
+          <div class="carousel">
+
+          </div>
+
+
+          <div class="container">
+            <div class="a1">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a2">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a3">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a4">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a5">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a6">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a7">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a8">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="a1">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a2">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a3">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a4">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a5">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a6">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a7">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a8">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="template3" class="template">
+          <div class="video">
+            <div class="grid-item-video">
+              <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/u31qwQUeGuM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> -->
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="a1">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a2">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a3">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a4">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="template4" class="template">
+          <div class="container">
+            <div class="a1">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a2">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a3">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a4">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="grid-item-video">
+              <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/u31qwQUeGuM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> -->
+            </div>
+          </div>
+        </div>
+
+        <div id="template5" class="template">
+          <div class="video">
+            <div class="grid-item-video">
+              <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/u31qwQUeGuM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> -->
+            </div>
+          </div>
+
+          <div class="carousel">-
+
+          </div>
+        </div>
+
+        <div id="template6" class="template">
+          <div class="carousel">
           </div>
         </div>
       </div>
     </div>
+  </div>
+  </div>
+  <div id="lightbox">
+    <img id="lightbox-image" src="./images/yellowportait.png">
+  </div>
+  </div>
 </body>
 
 <script>
@@ -368,14 +592,15 @@
   function showObject(projectid) {
     let fullscreen = document.getElementById("fullscreenviewer");
     let author_name = document.getElementById("author-name");
-    let main_image = document.getElementById("main-image-img");
+    let image = document.getElementById("main-image-img");
     let project_title = document.getElementById("project-title");
     let project_description = document.getElementById("project-description");
 
-    // get all grid item images in grid-item-desktop within fullscreen
-    let grid_item_images = document.querySelectorAll("#fullscreenviewer .grid-item-image img");
+    // reset fullscreen viewer scroll position
+    setTimeout(function () {
+      document.getElementById("projectfullscreen").scrollTop = 0;
+    }, 10);
 
-    console.log(grid_item_images);
 
     $.getJSON("projects.json", function (data) {
       let projects = data.projects;
@@ -383,22 +608,42 @@
       let project = projects.find(obj => obj.id == projectid);
       console.log(project);
 
-      author_name.innerHTML = project.name;
-      main_image.src = project.image;
+      project_template = "template" + project.template;
+      console.log(project_template);
+
+      document.getElementById("template1").style.display = "none";
+      document.getElementById("template2").style.display = "none";
+      document.getElementById("template2c").style.display = "none";
+      document.getElementById("template3").style.display = "none";
+      document.getElementById("template4").style.display = "none";
+      document.getElementById("template5").style.display = "none";
+      document.getElementById("template6").style.display = "none";
+
+      let template = document.getElementById(project_template);
+      template.style.display = "flex";
+
+      author_name.innerHTML = project.display_name;
+      image.src = project.image;
       project_title.innerHTML = project.title;
       project_description.innerHTML = project.description;
+
+      // get all grid item images in grid-item-desktop within fullscreen
+      let grid_item_images = document.querySelectorAll("#template" + project.template + " .grid-item-image img");
+      console.log(grid_item_images)
 
       // set grid item images
       for (let i = 1; i <= grid_item_images.length; i++) {
         grid_item_images[i - 1].src = project.images + i + ".jpg";
       }
 
+      let lightbox = document.getElementById("lightbox");
+      let lightbox_image = document.getElementById("lightbox-image");
+
+      console.log(grid_item_images)
       // open lightbox on click of images
       for (let i = 0; i < grid_item_images.length; i++) {
+        console.log(grid_item_images[i])
         grid_item_images[i].onclick = function () {
-          let lightbox = document.getElementById("lightbox");
-          let lightbox_image = document.getElementById("lightbox-image");
-
           lightbox.style.display = "flex";
           lightbox_image.src = project.images + (i + 1) + ".jpg";
 
@@ -406,7 +651,12 @@
           let closebutton = document.getElementById("closebutton");
           closebutton.style.opacity = 0;
           closebutton.style.pointerEvents = "none";
+
+          console.log(lightbox)
+          console.log(lightbox.style.display)
         }
+
+        console.log(grid_item_images)
       }
 
 
@@ -435,13 +685,9 @@
       document.getElementById("facebook").href = project.facebook;
       document.getElementById("instagram").href = project.instagram;
 
-
-
       html.style.overflow = "hidden";
-      fullscreen.scrollTop = 0;
       fullscreen.style.display = "block";
       fullscreen.style.overflow = "scroll";
-
     });
 
 
@@ -467,10 +713,10 @@
 
     setTimeout(function () {
       fullscreen.style.display = "none";
+      fullscreen.style.overflowY = "hidden";
+      html.style.overflowY = "auto";
     }, 300);
 
-    html.style.overflow = "scroll";
-    fullscreen.scrollTop = 0;
   }
 
   document.onkeydown = function (evt) {
@@ -493,21 +739,51 @@
   }
 
   function loadGrid() {
-    let grid = document.getElementById("museumgrid");
-    $.getJSON("objects.json", function (data) {
-      let objects = data.objects;
-      console.log(objects);
+    let grid = document.getElementById("grid-container-desktop");
+    $.getJSON("projects.json", function (data) {
+      let projects = data.projects;
+      console.log(projects);
+      console.log(grid);
 
-      objects.forEach(element => {
-        grid.innerHTML += ' \
-                  <div class="grid-item" onclick="showObject(\'' + element.id + '\')"> \
-                      <img class="museumimage" src="'+ element.imgpath + '"> \
-                          <div class="grid-item-description">' + element.title + '</div> \
-                  </div> \
-                  '
+      var i = 0;
+
+      let content = "";
+
+      projects.forEach(element => {
+        console.log(element.author);
+        console.log(i);
+        if (i % 2 == 0) {
+          content += '<div class="row">'
+        }
+
+        content += ' \
+        <div class="grid-item"> \
+          <div class="grid-item-image"> \
+            <span class="grid-item-author" onclick="showObject(\'' + element.id + '\')"> \
+              <p>' + element.author + '</p> \
+            </span> \
+            <img src="' + element.cover_image + '"> \
+          </div> \
+          <span class="grid-item-type"> \
+            <p>' + element.type + '</p> \
+          </span> \
+          <span class="grid-item-title"> \
+            <p>' + element.title + '</p> \
+          </span> \
+      </div> \
+        '
+        if (i % 2 != 0) {
+          content += '</div>'
+        }
+
+        i++;
       });
+
+      grid.innerHTML = content;
     });
   }
+
+  loadGrid();
 
   // ajax post parameters get
   var urlParams = new URLSearchParams(window.location.search);
@@ -516,9 +792,6 @@
   if (projectid) {
     showObject(projectid);
   }
-
-
-  // loadGrid();
 </script>
 
 </html>

@@ -1,13 +1,331 @@
 {
     "projects": [
         {
-            "id": "antheamifsud",
-            "name": "ANTHEA",
-            "title": "UNLEASHING THE POTENTIAL OF L-ANTIKA<br>ELEVATING THE CARD DECK EXPERIENCE",
+            "id": "maya",
+            "display_name": "MAYA",
+            "author": "MAYA (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
             "image": "./images/4E8A2775-Edit_sm.jpg",
-            "template": 2,
-            "images": "./projects/antheamifsud/images/",
+            "template": "1",
+            "images": "./projects/template1/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "clive",
+            "display_name": "CLIVE",
+            "author": "CLIVE (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "1",
+            "images": "./projects/template1/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "gianluca",
+            "display_name": "GIANLUCA",
+            "author": "GIANLUCA (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "1",
+            "images": "./projects/template1/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "miguel",
+            "display_name": "MIGUEL",
+            "author": "MIGUEL (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "1",
+            "images": "./projects/template1/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "nicole",
+            "display_name": "NICOLE",
+            "author": "NICOLE (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "2",
+            "images": "./projects/template2/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "olga",
+            "display_name": "OLGA",
+            "author": "OLGA SATER",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "2c",
+            "images": "./projects/template2c/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "camille",
+            "display_name": "CAMILLE",
+            "author": "CAMILLE (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "3",
+            "images": "./projects/template3/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+        
+        {
+            "id": "max",
+            "display_name": "MAX",
+            "author": "MAX (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "3",
+            "images": "./projects/template3/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+        
+        {
+            "id": "deborah",
+            "display_name": "DEBORAH",
+            "author": "DEBORAH (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "3",
+            "images": "./projects/template3/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+        
+        {
+            "id": "james",
+            "display_name": "JAMES",
+            "author": "JAMES (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "3",
+            "images": "./projects/template3/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "rachel",
+            "display_name": "RACHEL",
+            "author": "RACHEL (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "4",
+            "images": "./projects/template4/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "bernardo",
+            "display_name": "BERNARDO",
+            "author": "BERNARDO (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "4",
+            "images": "./projects/template4/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "andrew",
+            "display_name": "ANDREW",
+            "author": "ANDREW (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "5",
+            "images": "./projects/template5/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "elisa",
+            "display_name": "ELISA",
+            "author": "ELISA (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "5",
+            "images": "./projects/template5/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "christabel",
+            "display_name": "CHRISTABEL",
+            "author": "CHRISTABEL (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "5",
+            "images": "./projects/template5/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "katriona",
+            "display_name": "KATRIONA",
+            "author": "KATRIONA (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "5",
+            "images": "./projects/template5/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "matthew",
+            "display_name": "MATTHEW",
+            "author": "MATTHEW (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "5",
+            "images": "./projects/template5/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "martina",
+            "display_name": "MARTINA",
+            "author": "MARTINA (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "5",
+            "images": "./projects/template5/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "liam",
+            "display_name": "LIAM",
+            "author": "LIAM (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "5",
+            "images": "./projects/template5/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "anthea",
+            "display_name": "ANTHEA",
+            "author": "ANTHEA MIFSUD",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "6",
+            "images": "./projects/template5/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "maria",
+            "display_name": "MARIA",
+            "author": "MARIA (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "6",
+            "images": "./projects/template5/images/",
+            "facebook": "#",
+            "instagram": "#"
+        },
+
+        {
+            "id": "sarah",
+            "display_name": "SARAH",
+            "author": "SARAH (SURNAME)",
+            "type": "PHOTOGRAPHY",
+            "title": "PROJECT-TITLE",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
+            "cover_image": "./images/1.jpg",
+            "image": "./images/4E8A2775-Edit_sm.jpg",
+            "template": "6",
+            "images": "./projects/template5/images/",
             "facebook": "#",
             "instagram": "#"
         }
