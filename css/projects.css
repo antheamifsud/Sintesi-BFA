@@ -133,12 +133,12 @@ html {
     }
 }
 
-/* ::-webkit-scrollbar { 
+::-webkit-scrollbar { 
     display: none; 
-} */
+}
 
 /* Handle */
-#fullscreenviewer ::-webkit-scrollbar {
+/* #fullscreenviewer ::-webkit-scrollbar {
     background: var(--bg);
     width: 0.2em;
 }
@@ -146,7 +146,7 @@ html {
 #fullscreenviewer ::-webkit-scrollbar-thumb {
     width: 0.2em;
     background: var(--yellow);
-}
+} */
 
 #fullscreenviewer {
     display: none;
