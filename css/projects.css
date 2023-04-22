@@ -1,3 +1,7 @@
+html {
+    overflow-y: scroll;
+}
+
 /* Projects grid (desktop) */
 #grid-container-desktop {
     display: grid;
@@ -8,8 +12,6 @@
 
     width: 80%;
     margin: 0 auto;
-
-    overflow-y: auto;
 }
 
 .grid-container-mobile {
@@ -130,6 +132,10 @@
         opacity: 0;
     }
 }
+
+/* ::-webkit-scrollbar { 
+    display: none; 
+} */
 
 /* Handle */
 #fullscreenviewer ::-webkit-scrollbar {
