@@ -60,203 +60,16 @@
 
   <!-- Projects grid (desktop) - two projects per row -->
   <div id="grid-container-desktop">
-    <div class="row"> <!-- Grid row -->
-
-      <div class="grid-item"> <!-- Row item -->
-        <div class="grid-item-image"> <!-- Project author name + image section -->
-          <span class="grid-item-author" onclick="showObject('template1')">
-            <p>TEMPLATE 1</p>
-          </span> <!-- Author name -->
-          <img src="./images/1.jpg"> <!-- Image -->
-        </div>
-        <span class="grid-item-type">
-          <p>PHOTOGRAPHY</p>
-        </span> <!-- Project type -->
-        <span class="grid-item-title">
-          <p>PROJECT TITLE</p>
-        </span> <!-- Project title -->
-      </div>
-
-      <div class="grid-item">
-        <div class="grid-item-image">
-          <span class="grid-item-author" onclick="showObject('template2')">
-            <p>TEMPLATE 2</p>
-          </span>
-          <img src="./images/2.jpg">
-        </div>
-        <span class="grid-item-type">
-          <p>PHOTOGRAPHY</p>
-        </span>
-        <span class="grid-item-title">
-          <p>PROJECT TITLE</p>
-        </span>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="grid-item">
-        <div class="grid-item-image">
-          <span class="grid-item-author" onclick="showObject('template2c')">
-            <p>TEMPLATE 2c</p>
-          </span>
-          <img src="./images/3.jpg">
-        </div>
-        <span class="grid-item-type">
-          <p>PHOTOGRAPHY</p>
-        </span>
-        <span class="grid-item-title">
-          <p>PROJECT TITLE</p>
-        </span>
-      </div>
-
-      <div class="grid-item">
-        <div class="grid-item-image">
-          <span class="grid-item-author" onclick="showObject('template3')">
-            <p>TEMPLATE 3</p>
-          </span>
-          <img src="./images/4.jpg">
-        </div>
-        <span class="grid-item-type">
-          <p>PHOTOGRAPHY</p>
-        </span>
-        <span class="grid-item-title">
-          <p>PROJECT TITLE</p>
-        </span>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="grid-item">
-        <div class="grid-item-image">
-          <span class="grid-item-author" onclick="showObject('template4')">
-            <p>TEMPLATE 4</p>
-          </span>
-          <img src="./images/5.jpg">
-        </div>
-        <span class="grid-item-type">
-          <p>PHOTOGRAPHY</p>
-        </span>
-        <span class="grid-item-title">
-          <p>PROJECT TITLE</p>
-        </span>
-      </div>
-
-      <div class="grid-item">
-        <div class="grid-item-image">
-          <span class="grid-item-author" onclick="showObject('template5')">
-            <p>TEMPLATE 5</p>
-          </span>
-          <img src="./images/6.jpg">
-        </div>
-        <span class="grid-item-type">
-          <p>PHOTOGRAPHY</p>
-        </span>
-        <span class="grid-item-title">
-          <p>PROJECT TITLE</p>
-        </span>
-      </div>
-    </div>
   </div>
 
 
   <!-- Projects grid (mobile) - no rows here as projects take up the entire width -->
-  <div class="grid-container-mobile">
-    <div class="grid-item">
-      <div class="grid-item-image">
-        <span class="grid-item-author" onclick="showObject('template6')">
-          <p>TEMPLATE 6</p>
-        </span>
-        <img src="./images/1.jpg">
-      </div>
-      <span class="grid-item-type">
-        <p>PHOTOGRAPHY</p>
-      </span>
-      <span class="grid-item-title">
-        <p>PROJECT TITLE</p>
-      </span>
-    </div>
-
-    <div class="grid-item">
-      <div class="grid-item-image">
-        <span class="grid-item-author">
-          <p>JOHN DOE</p>
-        </span>
-        <img src="./images/2.jpg">
-      </div>
-      <span class="grid-item-type">
-        <p>PHOTOGRAPHY</p>
-      </span>
-      <span class="grid-item-title">
-        <p>PROJECT TITLE</p>
-      </span>
-    </div>
-
-    <div class="grid-item">
-      <div class="grid-item-image">
-        <span class="grid-item-author">
-          <p>JOHN DOE</p>
-        </span>
-        <img src="./images/3.jpg">
-      </div>
-      <span class="grid-item-type">
-        <p>PHOTOGRAPHY</p>
-      </span>
-      <span class="grid-item-title">
-        <p>PROJECT TITLE</p>
-      </span>
-    </div>
-
-    <div class="grid-item">
-      <div class="grid-item-image">
-        <span class="grid-item-author">
-          <p>JOHN DOE</p>
-        </span>
-        <img src="./images/4.jpg">
-      </div>
-      <span class="grid-item-type">
-        <p>PHOTOGRAPHY</p>
-      </span>
-      <span class="grid-item-title">
-        <p>PROJECT TITLE</p>
-      </span>
-    </div>
-
-    <div class="grid-item">
-      <div class="grid-item-image">
-        <span class="grid-item-author">
-          <p>JOHN DOE</p>
-        </span>
-        <img src="./images/5.jpg">
-      </div>
-      <span class="grid-item-type">
-        <p>PHOTOGRAPHY</p>
-      </span>
-      <span class="grid-item-title">
-        <p>PROJECT TITLE</p>
-      </span>
-    </div>
-
-    <div class="grid-item">
-      <div class="grid-item-image">
-        <span class="grid-item-author">
-          <p>JOHN DOE</p>
-        </span>
-        <img src="./images/6.jpg">
-      </div>
-      <span class="grid-item-type">
-        <p>PHOTOGRAPHY</p>
-      </span>
-      <span class="grid-item-title">
-        <p>PROJECT TITLE</p>
-      </span>
-    </div>
+  <div id="grid-container-mobile">
   </div>
 
   <div id="fullscreenviewer">
     <div id="closebutton" onclick="fadeOutFullscreen()">
-      <img src="./images/scroll-down.png">
+      <img id="backarrow" src="./images/scroll-down.png">
     </div>
 
     <div id="projectfullscreen">
@@ -276,7 +89,7 @@
           </div>
 
           <div id="scroll-down">
-            <img src="./images/scroll-down.png" onclick="scrollToContent()">
+            <img id="downarrow" src="./images/scroll-down.png" onclick="scrollToContent()">
           </div>
         </div>
       </div>
@@ -589,6 +402,26 @@
   let fullscreen = document.getElementById("fullscreenviewer");
   let html = document.getElementsByTagName("html")[0];
 
+  // scrolldown turns yellow on hover
+  let backarrow = document.getElementById("backarrow");
+  let downarrow = document.getElementById("downarrow");
+
+  backarrow.addEventListener("mouseover", function () {
+    backarrow.src = "./images/scroll-down-yellow.png";
+  });
+
+  backarrow.addEventListener("mouseout", function () {
+    backarrow.src = "./images/scroll-down.png";
+  });
+
+  downarrow.addEventListener("mouseover", function () {
+    downarrow.src = "./images/scroll-down-yellow.png";
+  });
+
+  downarrow.addEventListener("mouseout", function () {
+    downarrow.src = "./images/scroll-down.png";
+  });
+
   function showObject(projectid) {
     let fullscreen = document.getElementById("fullscreenviewer");
     let author_name = document.getElementById("author-name");
@@ -700,7 +533,8 @@
   function scrollToContent() {
     let content = document.getElementById("content");
     content.scrollIntoView({
-      behavior: 'smooth'
+      behavior: 'smooth',
+      block: 'start'
     });
   }
 
@@ -740,6 +574,7 @@
 
   function loadGrid() {
     let grid = document.getElementById("grid-container-desktop");
+    let grid_mobile = document.getElementById("grid-container-mobile");
     $.getJSON("projects.json", function (data) {
       let projects = data.projects;
       console.log(projects);
@@ -760,7 +595,7 @@
         <div class="grid-item"> \
           <div class="grid-item-image"> \
             <span class="grid-item-author" onclick="showObject(\'' + element.id + '\')"> \
-              <p>' + element.author + '</p> \
+              <p>' + element.display_name + '</p> \
             </span> \
             <img src="' + element.cover_image + '"> \
           </div> \
@@ -768,7 +603,7 @@
             <p>' + element.type + '</p> \
           </span> \
           <span class="grid-item-title"> \
-            <p>' + element.title + '</p> \
+            <p>' + element.short_title + '</p> \
           </span> \
       </div> \
         '
@@ -780,6 +615,7 @@
       });
 
       grid.innerHTML = content;
+      grid_mobile.innerHTML = content;
     });
   }
 
