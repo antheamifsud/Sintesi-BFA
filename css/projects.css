@@ -905,7 +905,7 @@ input[type=radio] {
     #author-name {
         position: relative;
         z-index: 5;
-        margin-bottom: -2em;
+        margin-bottom: -2.2em;
         font-size: 3em;
     }
 
