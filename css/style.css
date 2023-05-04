@@ -19,7 +19,13 @@
 }
 
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
+  padding-top: 12vh;
+
   background-color: var(--bg);
   font-family: "Red Hat Display", sans-serif;
 
@@ -46,7 +52,7 @@ ul {
   align-items: center;
 
   background-color: var(--bg);
-  position: sticky;
+  position: fixed;
   z-index: 10;
   height: 12vh;
   top: 0;

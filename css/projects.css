@@ -135,10 +135,6 @@ html {
     }
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 /* Handle */
 /* #fullscreenviewer ::-webkit-scrollbar {
     background: var(--bg);
@@ -844,6 +840,15 @@ input[type=radio] {
 
         width: 100%;
         margin: 0;
+    }
+
+    #closebutton {
+        position: fixed;
+        top: auto;
+        left: 1em;
+        bottom: 1em;
+        margin: 0;
+        width: 2em;
     }
 
     .grid-item {
