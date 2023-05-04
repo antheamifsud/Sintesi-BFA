@@ -72,13 +72,15 @@
 
         width: 100%;
         margin: 0 auto;
+
+        padding-bottom: 2em;
     }
 
     .grid-item {
         float: left;
         width: 50%;
 
-        padding: 0;
+        padding: 2em;
         padding-left: 2em;
         padding-right: 2em;
         text-align: center;
