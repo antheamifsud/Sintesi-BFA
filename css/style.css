@@ -142,6 +142,8 @@ ul {
   justify-content: left;
   align-items: flex-start;
   flex-direction: column;
+  
+  z-index: 9999;
 
   margin-left: 3em;
   margin-bottom: 3em;
@@ -297,7 +299,7 @@ ul {
     align-items: center;
     flex-direction: row;
 
-    z-index: 99;
+    z-index: 9999;
 
     margin: 0;
     padding: 0;

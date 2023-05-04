@@ -85,6 +85,7 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore temporibus iure pariatur. Explicabo quod harum quos rem a accusantium voluptas laudantium, voluptatum nihil, aspernatur corporis excepturi debitis recusandae cumque!",
             "cover_image": "./images/1.jpg",
             "image": "./images/4E8A2775-Edit_sm.jpg",
+            "carousel_qty": 4,
             "template": "2c",
             "images": "./projects/template2c/images/",
             "facebook": "#",
