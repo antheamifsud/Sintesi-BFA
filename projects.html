@@ -478,8 +478,16 @@
       let project = projects.find(obj => obj.id == projectid);
       console.log(project);
 
+      let do_carousel = false;
       let carousel_qty = 0;
-      carousel_qty = project.carousel_qty;
+
+      if (project.carousel_qty > 0) {
+        do_carousel = true;
+      }
+
+      if (do_carousel) {
+        carousel_qty = project.carousel_qty;
+      }
 
       project_template = "template" + project.template;
       console.log(project_template);
@@ -509,71 +517,75 @@
         grid_item_images[i - 1].src = project.images + i + ".jpg";
       }
 
-      // set carousel images if present
-      let carousel_container = document.querySelectorAll("#template" + project.template + " .carousel-container");
-      let carousel_indicators = document.querySelectorAll("#template" + project.template + " .carousel-indicators");
+      if (do_carousel) {
+        // set carousel images if present
+        let carousel_container = document.querySelectorAll("#template" + project.template + " .carousel-container");
+        let carousel_indicators = document.querySelectorAll("#template" + project.template + " .carousel-indicators");
 
-      // Convert NodeList to array
-      carousel_container = Array.from(carousel_container);
-      carousel_indicators = Array.from(carousel_indicators);
+        // Convert NodeList to array
+        carousel_container = Array.from(carousel_container);
+        carousel_indicators = Array.from(carousel_indicators);
 
-      // create array of images from project.images/carousel
-      let carousel_images = [];
-      for (let i = 1; i <= carousel_qty; i++) {
-        carousel_images.push(project.images + "carousel/" + i + ".jpg");
-      }
+        // create array of images from project.images/carousel
+        let carousel_images = [];
+        for (let i = 1; i <= carousel_qty; i++) {
+          carousel_images.push(project.images + "carousel/" + i + ".jpg");
+        }
 
-      console.log(carousel_container);
-      console.log(carousel_images);
+        console.log(carousel_container);
+        console.log(carousel_images);
 
-      // Clear container contents
-      carousel_container.forEach(function (container) {
-        container.innerHTML = '';
-      });
-
-      // set carousel images
-      carousel_images.forEach(function (image, index) {
+        // clear container contents
         carousel_container.forEach(function (container) {
-          container.innerHTML += ' \
+          container.innerHTML = '';
+        });
+
+        // set carousel images
+        carousel_images.forEach(function (image, index) {
+          carousel_container.forEach(function (container) {
+            container.innerHTML += ' \
       <div class="carousel-slide"> \
         <img src="' + image + '" alt="Image ' + index + '"> \
       </div> \
     ';
+          });
         });
-      });
 
-      console.log(carousel_container);
+        console.log(carousel_container);
 
-      // Clear indicator contents
-      carousel_indicators.forEach(function (indicator) {
-        indicator.innerHTML = '';
-      });
+        // clear indicator contents
+        carousel_indicators.forEach(function (indicator) {
+          indicator.innerHTML = '';
+        });
 
-      // set carousel indicators
-      carousel_images.forEach(function (image, index) {
-        carousel_indicators.forEach(function (indicator_container) {
-          indicator_container.innerHTML += ' \
+        // set carousel indicators
+        carousel_images.forEach(function (image, index) {
+          carousel_indicators.forEach(function (indicator_container) {
+            indicator_container.innerHTML += ' \
       <span class="indicator"></span> \
     ';
+          });
         });
-      });
 
-      console.log(carousel_indicators);
+        console.log(carousel_indicators);
 
-      // set first image to active
-      let carousel_slides = document.querySelectorAll("#template" + project.template + " .carousel-slide");
-      console.log(carousel_slides);
+        // set first image to active
+        let carousel_slides = document.querySelectorAll("#template" + project.template + " .carousel-slide");
+        console.log(carousel_slides);
 
-      carousel_slides[0].classList.add("active");
+        if (carousel_slides) {
+          carousel_slides[0].classList.add("active");
 
 
-      // set carousel indicator active
-      let indicators = document.querySelectorAll("#template" + project.template + " .indicator");
-      console.log(indicators);
+          // set carousel indicator active
+          let indicators = document.querySelectorAll("#template" + project.template + " .indicator");
+          console.log(indicators);
 
-      indicators[0].classList.add("active");
+          indicators[0].classList.add("active");
 
-      activateCarousel();
+          activateCarousel();
+        }
+      }
 
 
       let lightbox = document.getElementById("lightbox");
