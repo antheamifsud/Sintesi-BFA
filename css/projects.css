@@ -193,6 +193,7 @@ html {
 #projectfullscreen {
     position: fixed;
     overflow-y: auto;
+    overflow-x: hidden;
     z-index: 6;
     margin-top: 12vh;
     height: 100%;
