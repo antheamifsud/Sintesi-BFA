@@ -202,8 +202,8 @@
               </div> -->
             </div>
 
-            <a class="carousel-prev"><img id="carouselleft" src="./images/scroll-down.png"></a>
-            <a class="carousel-next"><img id="carouselright" src="./images/scroll-down.png"></a>
+            <a class="carousel-prev"><img class="carouselleft" src="./images/scroll-down.png"></a>
+            <a class="carousel-next"><img class="carouselright" src="./images/scroll-down.png"></a>
 
             <div class="carousel-indicators">
               <!-- <span class="indicator active"></span>
@@ -378,13 +378,52 @@
             </div>
           </div>
 
-          <div class="carousel">-
+          <div class="carousel">
+            <div class="carousel-container">
+              <!-- <div class="carousel-slide">
+              <img src="images\IMG_9312-3 copy_sm.jpg" alt="Image 1">
+            </div>
+            <div class="carousel-slide">
+              <img src="images\IMG_9312-3 copy_sm.jpg" alt="Image 2">
+            </div>
+            <div class="carousel-slide">
+              <img src="images\IMG_9312-3 copy_sm.jpg" alt="Image 3">
+            </div> -->
+            </div>
 
+            <a class="carousel-prev"><img class="carouselleft" src="./images/scroll-down.png"></a>
+            <a class="carousel-next"><img class="carouselright" src="./images/scroll-down.png"></a>
+
+            <div class="carousel-indicators">
+              <!-- <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span> -->
+            </div>
           </div>
         </div>
 
         <div id="template6" class="template">
           <div class="carousel">
+            <div class="carousel-container">
+              <!-- <div class="carousel-slide">
+                <img src="images\IMG_9312-3 copy_sm.jpg" alt="Image 1">
+              </div>
+              <div class="carousel-slide">
+                <img src="images\IMG_9312-3 copy_sm.jpg" alt="Image 2">
+              </div>
+              <div class="carousel-slide">
+                <img src="images\IMG_9312-3 copy_sm.jpg" alt="Image 3">
+              </div> -->
+            </div>
+
+            <a class="carousel-prev"><img class="carouselleft" src="./images/scroll-down.png"></a>
+            <a class="carousel-next"><img class="carouselright" src="./images/scroll-down.png"></a>
+
+            <div class="carousel-indicators">
+              <!-- <span class="indicator active"></span>
+              <span class="indicator"></span>
+              <span class="indicator"></span> -->
+            </div>
           </div>
         </div>
       </div>
@@ -427,8 +466,8 @@
   // scrolldown turns yellow on hover
   let backarrow = document.getElementById("backarrow");
   let downarrow = document.getElementById("downarrow");
-  let carouselleft = document.getElementById("carouselleft");
-  let carouselright = document.getElementById("carouselright");
+  let carousellefts = document.getElementsByClassName("carouselleft");
+  let carouselrights = document.getElementsByClassName("carouselright");
 
   backarrow.addEventListener("mouseover", function () {
     backarrow.src = "./images/scroll-down-yellow.png";
@@ -446,21 +485,40 @@
     downarrow.src = "./images/scroll-down.png";
   });
 
-  carouselleft.addEventListener("mouseover", function () {
-    carouselleft.src = "./images/scroll-down-yellow.png";
-  });
+  // carouselleft.addEventListener("mouseover", function () {
+  //   carouselleft.src = "./images/scroll-down-yellow.png";
+  // });
 
-  carouselleft.addEventListener("mouseout", function () {
-    carouselleft.src = "./images/scroll-down.png";
-  });
+  // carouselleft.addEventListener("mouseout", function () {
+  //   carouselleft.src = "./images/scroll-down.png";
+  // });
+  for (let i = 0; i < carousellefts.length; i++) {
+    carousellefts[i].addEventListener("mouseover", function () {
+      carousellefts[i].src = "./images/scroll-down-yellow.png";
+    });
 
-  carouselright.addEventListener("mouseover", function () {
-    carouselright.src = "./images/scroll-down-yellow.png";
-  });
+    carousellefts[i].addEventListener("mouseout", function () {
+      carousellefts[i].src = "./images/scroll-down.png";
+    });
+  }
 
-  carouselright.addEventListener("mouseout", function () {
-    carouselright.src = "./images/scroll-down.png";
-  });
+  // carouselright.addEventListener("mouseover", function () {
+  //   carouselright.src = "./images/scroll-down-yellow.png";
+  // });
+
+  // carouselright.addEventListener("mouseout", function () {
+  //   carouselright.src = "./images/scroll-down.png";
+  // });
+
+  for (let i = 0; i < carouselrights.length; i++) {
+    carouselrights[i].addEventListener("mouseover", function () {
+      carouselrights[i].src = "./images/scroll-down-yellow.png";
+    });
+
+    carouselrights[i].addEventListener("mouseout", function () {
+      carouselrights[i].src = "./images/scroll-down.png";
+    });
+  }
 
   function showObject(projectid) {
     let fullscreen = document.getElementById("fullscreenviewer");
@@ -490,6 +548,19 @@
 
       if (do_carousel) {
         carousel_qty = project.carousel_qty;
+      }
+
+      // change video iframe link
+      let video = project.video;
+      if (video) {
+        // get all iframes
+        let iframes = document.querySelectorAll("iframe");
+
+        // set iframe src
+        iframes.forEach(function (iframe) {
+          console.log(iframe)
+          iframe.src = video;
+        });
       }
 
       project_template = "template" + project.template;
@@ -586,7 +657,7 @@
 
           indicators[0].classList.add("active");
 
-          activateCarousel();
+          activateCarousel(project.template);
         }
       }
 
@@ -704,6 +775,13 @@
   }
 
   function fadeOutFullscreen() {
+    // stop playback of all youtube videos
+    let videos = document.querySelectorAll("iframe");
+    videos.forEach(function (video) {
+      let src = video.src;
+      video.src = src;
+    });
+
     fullscreen.animate({
       opacity: 0
     }, 400, function () {
@@ -794,12 +872,12 @@
     showObject(projectid);
   }
 
-  function activateCarousel() {
-    const carousel = document.querySelector('.carousel');
-    const carouselSlides = document.querySelectorAll('.carousel-slide');
-    const carouselPrev = document.querySelector('.carousel-prev');
-    const carouselNext = document.querySelector('.carousel-next');
-    const carouselIndicators = document.querySelectorAll('.indicator');
+  function activateCarousel(template) {
+    const carousel = document.querySelector('#template' + template + ' .carousel');
+    const carouselSlides = document.querySelectorAll('#template' + template + ' .carousel-slide');
+    const carouselPrev = document.querySelector('#template' + template + ' .carousel-prev');
+    const carouselNext = document.querySelector('#template' + template + ' .carousel-next');
+    const carouselIndicators = document.querySelectorAll('#template' + template + ' .indicator');
 
     let slideIndex = 0;
 

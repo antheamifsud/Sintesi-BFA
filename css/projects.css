@@ -89,6 +89,7 @@ html {
     height: 8%;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 1px;
     color: var(--white);
 }
 
@@ -104,6 +105,8 @@ html {
 
     font-size: 1.2em;
     font-weight: 600;
+
+    letter-spacing: 1px;
 
     background-color: var(--white);
     color: var(--bg);
@@ -543,7 +546,7 @@ input[type=radio] {
     position: relative;
 
     /* overflow: hidden; */
-    width: 50%;
+    width: 66%;
     height: 70vh;
     margin-bottom: 5em;
 }
@@ -584,13 +587,13 @@ input[type=radio] {
     opacity: 0.9;
 }
 
-#carouselleft {
+.carouselleft {
     transform: rotate(90deg);
     width: 1em;
     z-index: 9999;
 }
 
-#carouselright {
+.carouselright {
     transform: rotate(-90deg);
     width: 1em;
     z-index: 9999;
@@ -601,7 +604,8 @@ input[type=radio] {
     z-index: -1;
     position: relative;
     display: block;
-    width: auto;
+    max-width: 100%;
+    object-fit: cover;
     height: 60vh;
 }
 
@@ -692,17 +696,24 @@ input[type=radio] {
 }
 
 .video {
+    width: 66%;
+
+    margin-bottom: 10em;
+}
+
+.grid-item-video {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 75%;
-    min-height: 50vh;
-    padding-bottom: 5em;
+    /* 16:9 */
+    width: 100%;
+
+    position: relative;
 }
 
 .video iframe {
-    max-width: 100%;
+    width: 100%;
 }
 
 .a1 {
@@ -757,20 +768,6 @@ input[type=radio] {
     padding-bottom: 5em;
 }
 
-.video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 75%;
-    min-height: 50vh;
-    padding-bottom: 5em;
-}
-
-.video iframe {
-    max-width: 100%;
-}
-
 .a1 {
     grid-area: a1;
 }
@@ -809,20 +806,6 @@ input[type=radio] {
     flex-direction: column;
 
     width: 100%;
-}
-
-.video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 75%;
-    min-height: 50vh;
-    padding-bottom: 5em;
-}
-
-.video iframe {
-    max-width: 100%;
 }
 
 
@@ -1039,13 +1022,17 @@ input[type=radio] {
         object-fit: contain;
     }
 
+    #template2c .carousel {
+        margin-bottom: 5em;
+    }
+
     .carousel {
         position: relative;
 
         /* overflow: hidden; */
         width: 100%;
         height: auto;
-        margin-bottom: 5em;
+        margin-bottom: 15em;
     }
 
     .carousel-container {
@@ -1084,13 +1071,13 @@ input[type=radio] {
         opacity: 0.9;
     }
 
-    #carouselleft {
+    .carouselleft {
         transform: rotate(90deg);
         width: 1em;
         z-index: 9999;
     }
 
-    #carouselright {
+    .carouselright {
         transform: rotate(-90deg);
         width: 1em;
         z-index: 9999;
@@ -1101,7 +1088,8 @@ input[type=radio] {
         z-index: -1;
         position: relative;
         display: block;
-        max-width: 100vw;
+        max-width: 100%;
+        object-fit: cover;
         height: auto;
     }
 
@@ -1162,4 +1150,7 @@ input[type=radio] {
         pointer-events: auto;
     }
 
+    .video {
+        margin-bottom: 5em;
+    }
 }
