@@ -199,6 +199,7 @@ html {
     overflow-x: hidden;
     z-index: 6;
     margin-top: 12vh;
+    padding-bottom: 10vh;
     height: 100%;
     width: 100%;
     top: 0;
@@ -306,8 +307,7 @@ html {
 }
 
 #content {
-    min-height: 100%;
-    padding-bottom: 3em;
+    /* min-height: 100%; */
 }
 
 #lightbox {
@@ -540,6 +540,10 @@ input[type=radio] {
     margin: auto;
     transition: transform .4s ease;
     cursor: pointer;
+}
+
+#template2c .carousel {
+    margin-bottom: 5em;
 }
 
 .carousel {
@@ -809,6 +813,16 @@ input[type=radio] {
 }
 
 
+/* TEMPLATE 6 */
+#template6 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+}
+
 @media screen and (max-aspect-ratio: 1/1) {
     #grid-container-desktop {
         display: none !important;
@@ -1020,10 +1034,6 @@ input[type=radio] {
     #lightbox img {
         width: 100%;
         object-fit: contain;
-    }
-
-    #template2c .carousel {
-        margin-bottom: 5em;
     }
 
     .carousel {
