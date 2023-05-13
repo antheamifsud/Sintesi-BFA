@@ -168,7 +168,7 @@
         },
 
         {
-            "id": "bernardo",
+            "id": "bernie",
             "display_name": "BERNIE",
             "author": "BERNIE (SURNAME)",
             "type": "Virtual Reality/3D",
@@ -184,7 +184,7 @@
         },
 
         {
-            "id": "andrew",
+            "id": "drew",
             "display_name": "DREW",
             "author": "ANDREW (SURNAME)",
             "type": "VIRTUAL REALITY",
@@ -202,12 +202,12 @@
         },
 
         {
-            "id": "elisa",
+            "id": "ellie",
             "display_name": "ELLIE",
             "author": "ELLIE (SURNAME)",
             "type": "Virtual Reality",
             "short_title": "Trial by Torchlight",
-            "title": "Trial by Torchlight: The Utilisation of Context Clues within an Interactive VR Environment",
+            "title": "Trial by Torchlight: The Utilisation of Context Clues<br>within an Interactive VR Environment",
             "description": "Being Ellie's first video game development experience, this project revolved around a virtual reality game that is set within a megalithic temple.In a non-linear progression, the player chooses which puzzle to complete first and has complete reign over which steps they will take next. This is done through subtle contextual clues, which Virtual Reality is the ideal medium for. Everything is done from scratch throughout the entire process, from the initial concept art to the final small details like a little lizard resting on a rock.",
             "video": "https://www.youtube.com/embed/IG9YkpqFSiI",
             "cover_image": "./projects/elisa/PPG_ELISA.png",
