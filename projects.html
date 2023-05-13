@@ -426,6 +426,32 @@
             </div>
           </div>
         </div>
+        
+        <div id="template7" class="template">
+          <div class="container">
+            <div class="a1">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a2">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a3">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+            <div class="a4">
+              <div class="grid-item-image">
+                <img src="./images/yellowportait.png">
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div id="social">
@@ -573,6 +599,7 @@
       document.getElementById("template4").style.display = "none";
       document.getElementById("template5").style.display = "none";
       document.getElementById("template6").style.display = "none";
+      document.getElementById("template7").style.display = "none";
 
       let template = document.getElementById(project_template);
       template.style.display = "flex";
@@ -768,6 +795,17 @@
 
   function scrollToContent() {
     let content = document.getElementById("content");
+    // get first child which is not display none
+    let children = content.children;
+    for (let i = 0; i < children.length; i++) {
+      if (children[i].style.display != "none") {
+        content = children[i];
+        break;
+      }
+    }
+
+    content = content.firstElementChild;
+
     content.scrollIntoView({
       behavior: 'smooth',
       block: 'start'

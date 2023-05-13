@@ -216,7 +216,7 @@ html {
 
     /* padding-top: 2em; */
 
-    width: 60%;
+    width: 70%;
     height: 100vh;
 
     margin: 0 auto;
@@ -224,9 +224,9 @@ html {
 
 #author-name {
     position: absolute;
-    padding-top: 1em;
+    padding-top: 0.2em;
 
-    font-size: 4em;
+    font-size: calc(1vw + 1vh * 6);
     font-weight: 500;
     letter-spacing: 1px;
 
@@ -234,17 +234,16 @@ html {
 }
 
 #main-image {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: flex-end;
-    flex-direction: column;
+    flex-direction: column; */
 
     width: 50%;
-
-    padding-top: 2em;
 }
 
 #main-image img {
+    float: right;
     width: 90%;
     right: 0;
 }
@@ -252,15 +251,16 @@ html {
 #main-info {
     float: right;
     width: 50%;
-    height: 88vh;
+    min-height: 80vh;
+    max-height: 88vh;
 
-    padding-left: 2em;
+    padding-left: 2vw;
 
-    padding-top: 12em;
+    padding-top: 14vh;
 }
 
 #project-title {
-    font-size: 1.2em;
+    font-size: calc(1vw + 1vh / 2);
     font-weight: 600;
     letter-spacing: 1px;
 
@@ -274,9 +274,12 @@ html {
 }
 
 #project-description {
-    font-size: 1em;
+    font-size: calc(1vw + 1vh / 3); /* increase font size based on viewport width */
+    max-height: 100%;
     font-weight: 400;
     letter-spacing: 1px;
+
+    width: calc(100%);
 
     color: var(--white);
 }
@@ -307,6 +310,7 @@ html {
 }
 
 #content {
+    scroll-behavior: smooth;
     /* min-height: 100%; */
 }
 
@@ -338,6 +342,11 @@ html {
     height: 100%;
 }
 
+.template {
+    padding-bottom: 6vh;
+    padding-top: 6vh;
+}
+
 /* TEMPLATE 1 */
 #template1 {
     display: none;
@@ -356,8 +365,31 @@ html {
     grid-template-areas:
         "a1 a2 a4"
         "a1 a3 a4";
-    width: 60%;
-    padding-bottom: 5em;
+    width: 75%;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+}
+
+#template7 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+#template7 .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em 1em;
+    grid-template-areas:
+        "a1 a2 a4"
+        "a1 a3 a4";
+    width: 75%;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
 }
 
 .a1 {
@@ -389,6 +421,19 @@ html {
     object-position: center center;
 }
 
+#template7 .grid-item-image {
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+}
+
+#template7 .grid-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
 /* TEMPLATE 2 */
 #template2 {
     display: none;
@@ -409,8 +454,9 @@ html {
         "a1 a2 a3 a4"
         "a5 a6 a7 a8";
 
-    width: 60%;
-    padding-bottom: 5em;
+    width: 65%;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
 }
 
 .a1 {
@@ -478,8 +524,9 @@ html {
         "a1 a2 a3 a4"
         "a5 a6 a7 a8";
 
-    width: 60%;
-    padding-bottom: 5em;
+    padding-top: 6vh;
+
+    width: 65%;
 }
 
 .a1 {
@@ -552,7 +599,9 @@ input[type=radio] {
     /* overflow: hidden; */
     width: 66%;
     height: 70vh;
-    margin-bottom: 5em;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    margin-bottom: 6vh;
 }
 
 .carousel-container {
@@ -696,13 +745,15 @@ input[type=radio] {
         "a1 a2 a4"
         "a1 a3 a4";
     width: 60%;
-    padding-bottom: 5em;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
 }
 
 .video {
     width: 66%;
 
-    margin-bottom: 10em;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
 }
 
 .grid-item-video {
@@ -712,6 +763,7 @@ input[type=radio] {
     flex-direction: column;
     /* 16:9 */
     width: 100%;
+    max-height: 80vh;
 
     position: relative;
 }
@@ -813,6 +865,8 @@ input[type=radio] {
 }
 
 
+
+
 /* TEMPLATE 6 */
 #template6 {
     display: none;
@@ -822,6 +876,7 @@ input[type=radio] {
 
     width: 100%;
 }
+
 
 @media screen and (max-aspect-ratio: 1/1) {
     #grid-container-desktop {
@@ -873,7 +928,7 @@ input[type=radio] {
     }
 
     .grid-item-title {
-        font-size: 1.5em;
+        font-size: 1.2em;
         padding-top: 1em;
         padding-bottom: 1em;
     }
@@ -922,6 +977,7 @@ input[type=radio] {
     #main-info {
         width: 100%;
         height: 100%;
+        min-height: 0;
         padding: 0;
     }
 
@@ -931,6 +987,10 @@ input[type=radio] {
         margin: 0;
         padding-bottom: 1em;
         width: 100%;
+    }
+
+    br {
+        display: none;
     }
 
     #project-description {
@@ -947,6 +1007,20 @@ input[type=radio] {
     }
 
     #template1 .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 1em 1em;
+        grid-template-areas:
+            "a1"
+            "a2"
+            "a3"
+            "a4";
+        width: 80%;
+        padding-bottom: 5em;
+    }
+
+    #template7 .container {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
