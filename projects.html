@@ -606,7 +606,16 @@
 
       author_name.innerHTML = project.display_name;
       image.src = project.image;
-      project_title.innerHTML = project.title;
+      // if on mobile device (check ratio is smaller than 1:1)
+      if (project.mobile_title && window.innerWidth / window.innerHeight < 1) {
+        // add .showbr class to project_title
+        project_title.classList.add("showbr");
+        project_title.innerHTML = project.mobile_title;
+      } else {
+        project_title.classList.remove("showbr");
+        project_title.innerHTML = project.title;
+      }
+      // project_title.innerHTML = project.title;
       project_description.innerHTML = project.description;
 
       // get all grid item images in grid-item-desktop within fullscreen
@@ -770,7 +779,7 @@
         document.getElementById("facebook").href = project.facebook;
       }
       else {
-        document.getElementById("facebook").href = "https://www.facebook.com/profile.php?id=100090701443203/"
+        document.getElementById("facebook").href = "https://www.facebook.com/profile.php?id=100090701443203"
       }
 
       if (project.instagram) {
@@ -880,6 +889,13 @@
           content += '<div class="row">'
         }
 
+        let short;
+        if (element.mobile_short_title  && window.innerWidth / window.innerHeight < 1) {
+          short = element.mobile_short_title;
+        } else {
+          short = element.short_title;
+        }
+
         content += ' \
         <div class="grid-item"> \
           <div class="grid-item-image"> \
@@ -892,7 +908,7 @@
             <p>' + element.type + '</p> \
           </span> \
           <span class="grid-item-title"> \
-            <p>' + element.short_title + '</p> \
+            <p>' + short + '</p> \
           </span> \
       </div> \
         '

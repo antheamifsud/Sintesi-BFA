@@ -217,10 +217,11 @@ ul {
   }
 
   #nav-mobile ul li {
-    font-size: 3em;
+    font-size: calc(1vw * 3 + 1vh * 3);
     font-weight: 300;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
+    line-height: 1.5em;
   }
 
   /* Mobile Hamburger */

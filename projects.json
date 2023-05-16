@@ -49,8 +49,8 @@
             "display_name": "MIGUEL",
             "author": "MIGUEL (SURNAME)",
             "type": "3D modelling and Printing",
-            "short_title": "3D Dolphin board game ",
-            "title": "3D PRINTED DOLPHIN BOARD GAME: EXPLORING THE <br>HIERARCHY OF ANIMALS FROM THE PERSPECTIVE OF <br>HUMANS",
+            "short_title": "FinKins",
+            "title": "FinKins: A 3D printed Dolphin board game,<br> exploring the hierarchy of animals from<br> the perspective of humans, focusing on<br> Dolphins in captivity.",
             "description": "The aim of this dissertation is to experiment with how humans view animals, the level of importance of certain animals in human's eyes. Therefore, Miguel created this 3D board game in order to put the players (humans) in the shoes of Dolphins in captivity, used and restricted to live as humans want them too. This dissertation wants to install a level of empathy towards these Dolphins. By having the work 3D printed, this would allow the players to experience something new and have a more realistic experience of the conditions put on captive dolphins.",
             "cover_image": "./projects/miguel/PPG_MIGUEL.png",
             "image": "./projects/miguel/MIGUEL.jpg",
@@ -78,7 +78,9 @@
             "author": "OLGA SATER",
             "type": "Photography",
             "short_title": "Re-framing 'Nies tal-Pjazza'",
+            "mobile_short_title": "Re-framing<br>'Nies tal-Pjazza'",
             "title": "Re-framing 'Nies tal-Pjazza': Portraiture <br>through deadpan methodology",
+            "mobile_title": "Re-framing<br>'Nies tal-Pjazza': Portraiture <br>through deadpan methodology",
             "description": "Olga's research project examines the issue of objectivity in deadpan photographic portraiture and investigates whether deadpan portraiture enables a subject to visually convey a dominant personality trait. <br> <br>The study is based on a sample of 63 male individuals belonging to a specific Maltese social group that is called 'nies tal-pjazza' (people of the village square) recruited and photographed in public areas across eight Maltese villages. The deadpan portraits as well as the ethnographic observations of the researcher before, during, and after the photography sessions are systematically analysed through engagement with the theories of non-verbal communication, body language, and personality traits.",
             "cover_image": "./projects/olga/PPG_OLGA.png",
             "image": "./projects/olga/OLGA.jpg",
@@ -92,7 +94,7 @@
             "id": "camille",
             "display_name": "CAMILLE",
             "author": "CAMILLE (SURNAME)",
-            "type": "photography and illustration",
+            "type": "MIXED MEDIA",
             "short_title": "Visual Music",
             "title": "Visual Interpretation of Music through Design",
             "description": "Camille's project explores the integration of music and visual art, and how through this collaboration one gets to experience the two from a new perspective. By studying the connections between these art forms, through various themes, a multi-sensory experience is created. This is done through experimental work, where a curated playlist, that features, Indie music is translated into a visual journey. The project aims to prioritise the user's experience when it comes to listening to music. Due to the introduction of visuals, the audience is more immersed in the subject, where they are invited to use more senses and get a better understanding of the music provided.",
@@ -249,7 +251,8 @@
             "image": "./projects/katriona/KATRIONA.jpg",
             "carousel_qty": 6,
             "template": "5",
-            "images": "./projects/katriona/images/"
+            "images": "./projects/katriona/images/",
+            "instagram": "https://www.instagram.com/anoirtak/"
         },
 
         {

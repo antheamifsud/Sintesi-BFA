@@ -989,11 +989,16 @@ input[type=radio] {
         width: 100%;
     }
 
-    br {
+    #project-title br {
         display: none;
     }
 
+    .showbr br {
+        display: block !important;
+    }
+
     #project-description {
+        text-align: left;
         font-size: 1em;
     }
 
